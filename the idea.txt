@@ -1,0 +1,91 @@
+                 ┌──────────────┐
+User ──Job──────►│  Job Queue   │
+                 └──────┬───────┘
+                        │
+             ┌──────────┼──────────┐
+             ▼          ▼          ▼
+          Worker 1   Worker 2   Worker 3
+             │          │          │
+             ▼          ▼          ▼
+           Job A      Job B      Job C
+
+User adds a job to a list of jobs
+//job type
+//job priority
+//job id
+//job descripition
+//job status
+//job workers limit
+//job deadline
+
+Each job should be able to be displayed with all its information
+
+jobs should be stored in a database - SQLite + Entity Framework Core.
+
+Users:
+users should be able to create a job
+users should be able to cancel a job
+users should be able to assign workers
+users should be able to track all jobs
+
+workers:
+workers should be able to pick a job if no active job
+workers should be able to view all jobs
+workers should be able to edit some information about a job
+
+basically
+User creates jobs
+jobs stored in database
+workers after logining can get jobs and kinda manage them
+
+
+              ┌────────────┐
+              │    User    │
+              └─────┬──────┘
+                    │ creates
+                    ▼
+              ┌────────────┐
+              │    Job     │
+              └─────┬──────┘
+                    │
+                    │ queued
+                    ▼
+              ┌────────────┐
+              │   Queue    │
+              └─────┬──────┘
+                    │
+                    │ assigned
+                    ▼
+              ┌────────────┐
+              │   Worker   │
+              └────────────┘
+
+   PERMANENT STORAGE
+              ┌─────────────────────┐
+              │      DATABASE       │
+              │                     │
+              │ Job 101             │
+              │ Job 102             │
+              │ Job 103             │
+              │ Job 104             │
+              └──────────┬──────────┘
+                         │
+                  program reads
+                         │
+                         ▼
+              ┌─────────────────────┐
+              │      JOB QUEUE      │
+              │                     │
+              │ Job 103  ← High     │
+              │ Job 101  ← Normal   │
+              │ Job 104  ← Normal   │
+              │ Job 102  ← Low      │
+              └──────────┬──────────┘
+                         │
+                 assigns available work
+                         │
+             ┌───────────┼───────────┐
+             ▼           ▼           ▼
+          Worker 1    Worker 2    Worker 3
+
+
