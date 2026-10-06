@@ -1,2 +1,24 @@
 # Ticket-Manager-Job-queue---with-sqllite-database-
-Features: Manager role + worker role with different menus and permissions. Custom jobs. Create jobs, view jobs, view the queue of jobs, view job information, search for jobs. Create workers, delete workers, assign tasks to workers, manage workers information + more. check it out and u will see whats its about 
+Features:
+Manger + worker secure logins
+MANAGER PANNEL
+Task section
+- add task
+- customize task
+- edit task
+- remove task
+- view all tasks
+- search task
+Worker Section
+- register a new worker
+- remove worker
+- edit worker
+- assign task to worker
+- search worker
+- view all workers
+Worker pannel
+- search task
+- assign a task to self
+- finish task
+- remove self from task
+- 
