@@ -2,6 +2,7 @@
 Features:
 Manger + worker secure logins
 MANAGER PANNEL
+
 Task section
 - add task
 - customize task
@@ -9,6 +10,7 @@ Task section
 - remove task
 - view all tasks
 - search task
+
 Worker Section
 - register a new worker
 - remove worker
@@ -16,9 +18,11 @@ Worker Section
 - assign task to worker
 - search worker
 - view all workers
+
 Worker pannel
+
 - search task
 - assign a task to self
 - finish task
 - remove self from task
-- 
+
