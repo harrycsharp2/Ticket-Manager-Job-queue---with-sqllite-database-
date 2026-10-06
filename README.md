@@ -1,28 +1,8 @@
-# Ticket-Manager-Job-queue---with-sqllite-database-
-Features:
-Manger + worker secure logins
-MANAGER PANNEL
+HOW TO FIND EACH VERSION
 
-Task section
-- add task
-- customize task
-- edit task
-- remove task
-- view all tasks
-- search task
+EACH VERSION HAS ITS OWN BRANCH
+GO ON WHICH BRANCH U WANT AND DOWNLOAD THE VERSION
 
-Worker Section
-- register a new worker
-- remove worker
-- edit worker
-- assign task to worker
-- search worker
-- view all workers
-
-Worker pannel
-
-- search task
-- assign a task to self
-- finish task
-- remove self from task
-
+FOR EXAMPLE
+Branch: V.0.0.1 will contain the first ever version
+Branch: V.0.0.2 will have the second version so forth
