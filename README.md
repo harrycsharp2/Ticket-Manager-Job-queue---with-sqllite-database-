@@ -39,3 +39,6 @@ INBOX:
 - delete message
 - read message
 
+DONE TASKS:
+- workers can now submit tasks where they are stored for manages to see and delete and return back
+- workers also add a finished note
